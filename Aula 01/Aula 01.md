@@ -96,47 +96,22 @@ O GitHub é uma plataforma de **hospedagem de código-fonte** que permite salvar
 ```scss
 📁 curso-logica-de-programa
 ├── 📁 Aula 01
-│   └── (Exercícios da Aula 01)
 ├── 📁 Aula 02
-│   └── (Exercícios da Aula 02)
 ├── 📁 Aula 03
-│   └── (Exercícios da Aula 03)
 ├── 📁 Aula 04
-│   └── (Exercícios da Aula 04)
 ├── 📁 Aula 05
-│   └── (Exercícios da Aula 05)
 ├── 📁 Aula 06
-│   └── (Exercícios da Aula 06)
 ├── 📁 Aula 07
-│   └── (Exercícios da Aula 07)
 ├── 📁 Aula 08
-│   └── (Exercícios da Aula 08)
 ├── 📁 Aula 09
-│   └── (Exercícios da Aula 09)
 ├── 📁 Aula 10
-│   └── (Exercícios da Aula 10)
 ├── 📁 Aula 11
-│   └── (Exercícios da Aula 11)
 ├── 📁 Aula 12
-│   └── (Exercícios da Aula 12)
 ├── 📁 Aula 13
-│   └── (Exercícios da Aula 13)
 ├── 📁 Aula 14
-│   └── (Exercícios da Aula 14)
 ├── 📁 Aula 15
-│   └── (Exercícios da Aula 15)
 ├── 📁 Aula 16
-│   └── (Exercícios da Aula 16)
-├── 📁 Aula 17
-│   └── (Exercícios da Aula 17)
-├── 📁 Aula 18
-│   └── (Exercícios da Aula 18)
-├── 📁 Aula 19
-│   └── (Exercícios da Aula 19)
-├── 📁 Aula 20
-│   └── (Exercícios da Aula 20)
 ├── 📁 Projeto Final
-│   └── (Projeto final completo feito ao final do curso)
 ```
 
 ---
