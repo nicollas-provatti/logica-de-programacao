@@ -3,7 +3,7 @@
 ---
 
 ### 🔹 Exercício 1 - Boas-vindas
-**Descrição:** Crie um programa em Portugol que solicite ao usuário os seguintes dados: **nome** (cadeia), **idade** (inteiro), **altura** (real), **gênero** (caracter) e **estudante** (booleano).
+**Descrição:** Crie um programa em Portugol que solicite ao usuário os seguintes dados: **nome** (cadeia), **idade** (inteiro), **altura** (real), **gênero** (caracter) e **estudante** (lógico).
 
 **Exemplo de:**
 - Entrada:
