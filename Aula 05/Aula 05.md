@@ -66,9 +66,9 @@ Primeiro, o bloco dentro do `faca` é executado, onde é exibida a mensagem `"Di
 
 |Estrutura    |	Quando usar|
 |-------------|------------|
-| `para`	      |Quando não sabemos quantas repetições serão necessárias |
-| `enquanto`     |Quando queremos garantir ao menos uma execução |
-| `faca-enquanto`  | Quandosabemos o número exato de repetições |
+| `para`	      | Quando sabemos o número exato de repetições |
+| `enquanto`     | Quando queremos garantir ao menos uma execução |
+| `faca-enquanto`  | Quando não sabemos quantas repetições serão necessárias |
 
 ---
 
