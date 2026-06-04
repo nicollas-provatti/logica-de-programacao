@@ -77,7 +77,7 @@ inteiro numero = 10
 ✅ **Boas práticas:**
 
 - Nomes devem ser descritivos e fáceis de entender (`idade`, `precoProduto`).
-- Usar letras minúsculas e `camelCase` para múltiplas palavras (`quantidadeMaxima`).
+- Usar letras maiúsculas e `camelCase` para múltiplas palavras (`quantidadeMaxima`).
 - Utilizar apenas letras, números e o caractere "_" (`nome_usuario`).
 - Sempre começar com uma letra (não pode iniciar com números ou caracteres especiais).
 
