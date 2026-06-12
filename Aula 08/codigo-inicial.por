@@ -5,9 +5,7 @@ programa {
     inteiro melhorPontuacao = 999
 
     enquanto (verdadeiro) {
-      escreva("---------------------------------\n")
-      escreva("Bem-vindo ao Jogo da Adivinhação!\n")
-      escreva("---------------------------------\n\n")
+      mensagemBoasVindas()
 
       inteiro numeroSorteado = util.sorteia(1, 100)
       inteiro numeroTentativas = 0
@@ -76,5 +74,15 @@ programa {
         pare
       }
     }
+  }
+
+  funcao mensagemBoasVindas() {
+    escreva("---------------------------------\n")
+    escreva("Bem-vindo ao Jogo da Adivinhação!\n")
+    escreva("---------------------------------\n\n")
+  }
+
+  funcao inteiro sortearNumero() {
+    retorne util.sorteia(1, 100)
   }
 }
