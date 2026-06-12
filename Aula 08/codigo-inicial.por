@@ -1,13 +1,14 @@
 programa {
   inclua biblioteca Util -->util
-  funcao inicio() {
-    cadeia melhorJogador = ""
-    inteiro melhorPontuacao = 999
 
+  cadeia melhorJogador = ""
+  inteiro melhorPontuacao = 999
+
+  funcao inicio() {
     enquanto (verdadeiro) {
       mensagemBoasVindas()
 
-      inteiro numeroSorteado = util.sorteia(1, 100)
+      inteiro numeroSorteado = sortearNumero()
       inteiro numeroTentativas = 0
       cadeia nomeJogador
 
@@ -16,16 +17,9 @@ programa {
 
       escreva("\nOlá, ", nomeJogador, "! Preparando o jogo")
 
-      util.aguarde(1000)
-      escreva(".")
-      util.aguarde(1000)
-      escreva(".")
-      util.aguarde(1000)
-      escreva(".\n\n")
-      util.aguarde(1000)
+      atraso()
 
-      escreva("Um número de 1 a 100 foi sorteado!\n")
-      escreva("Tente adivinhar qual é! Boa sorte!\n\n")
+      mensagemInicio()
 
       enquanto (verdadeiro) {
         inteiro numeroDigitado
@@ -39,35 +33,16 @@ programa {
           numeroTentativas++
 
           se (numeroDigitado == numeroSorteado) {
-            se (numeroTentativas <= 3) {
-              escreva("✅ Uau! Você é um gêneio da adivinhação! Número de Tentativas: ", numeroTentativas, ".\n")
-            } senao se (numeroTentativas <= 6) {
-              escreva("✅ Muite bem! Você foi rápido! Número de Tentativas: ", numeroTentativas, ".\n") 
-            } senao {
-              escreva("✅ Conseguiu! Persitência é tudo! Número de Tentativas: ", numeroTentativas, ".\n") 
-            }
-
-            se (numeroTentativas < melhorPontuacao) {
-              melhorPontuacao = numeroTentativas
-              melhorJogador = nomeJogador
-              escreva("\n🏆 Novo recorde! Você obteve a melhor pontuação até agora.\n")
-            }
+            mensagemPersonalizada(numeroTentativas)
+            atualizarMelhorJogador(nomeJogador, numeroTentativas)
             pare
           }
 
-          se (numeroSorteado > numeroDigitado) {
-            escreva("❌ O número sorteado é MAIOR que ", numeroDigitado, ".\n\n")
-          } senao {
-            escreva("❌ O número sorteado é MENOR que ", numeroDigitado, ".\n\n")
-          }
+          exibirDica(numeroDigitado, numeroSorteado)
         }
       }
 
-      cadeia novoJogo
-
-      escreva("\nDeseja iniciar um novo jogo (sim/nao) ? ")
-      leia(novoJogo)
-      limpa()
+      cadeia novoJogo = iniciarNovoJogo()
 
       se (novoJogo == "nao" ou novoJogo == "NAO" ou novoJogo == "n" ou novoJogo == "N") {
         escreva("\n🏅 O melhor jogador foi ", melhorJogador, " com ", melhorPontuacao, " tentativas.\n")
@@ -84,5 +59,55 @@ programa {
 
   funcao inteiro sortearNumero() {
     retorne util.sorteia(1, 100)
+  }
+
+  funcao atraso() {
+    util.aguarde(1000)
+    escreva(".")
+    util.aguarde(1000)
+    escreva(".")
+    util.aguarde(1000)
+    escreva(".\n\n")
+    util.aguarde(1000)
+  }
+
+  funcao mensagemInicio() {
+    escreva("Um número de 1 a 100 foi sorteado!\n")
+    escreva("Tente adivinhar qual é! Boa sorte!\n\n")
+  }
+
+  funcao mensagemPersonalizada(inteiro numeroTentativas) {
+    se (numeroTentativas <= 3) {
+      escreva("✅ Uau! Você é um gêneio da adivinhação! Número de Tentativas: ", numeroTentativas, ".\n")
+    } senao se (numeroTentativas <= 6) {
+      escreva("✅ Muite bem! Você foi rápido! Número de Tentativas: ", numeroTentativas, ".\n") 
+    } senao {
+      escreva("✅ Conseguiu! Persitência é tudo! Número de Tentativas: ", numeroTentativas, ".\n") 
+    }
+  }
+
+  funcao atualizarMelhorJogador(cadeia nomeJogador, inteiro numeroTentativas) {
+    se (numeroTentativas < melhorPontuacao) {
+      melhorPontuacao = numeroTentativas
+      melhorJogador = nomeJogador
+      escreva("\n🏆 Novo recorde! Você obteve a melhor pontuação até agora.\n")
+    }
+  }
+
+  funcao exibirDica(inteiro numeroDigitado, inteiro numeroSorteado) {
+    se (numeroSorteado > numeroDigitado) {
+      escreva("❌ O número sorteado é MAIOR que ", numeroDigitado, ".\n\n")
+    } senao {
+      escreva("❌ O número sorteado é MENOR que ", numeroDigitado, ".\n\n")
+    }
+  }
+
+  funcao cadeia iniciarNovoJogo() {
+    cadeia novoJogo
+    escreva("\nDeseja iniciar um novo jogo (sim/nao) ? ")
+    leia(novoJogo)
+    limpa()
+
+    retorne novoJogo
   }
 }
