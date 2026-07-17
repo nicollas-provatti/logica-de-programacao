@@ -1,0 +1,11 @@
+printf("\n===== SISTEMA BANCÁRIO =====\n");
+printf("1 - Criar Conta\n");
+printf("2 - Exibir Contas\n");
+printf("3 - Depositar\n");
+printf("4 - Sacar\n");
+printf("5 - Buscar Conta\n");
+printf("6 - Transferir\n");
+printf("7 - Deletar Conta\n");
+printf("8 - Editar Conta\n");
+printf("0 - Sair\n");
+printf("============================\n\n");
