@@ -1,0 +1,5 @@
+1001,Ana Souza,1500.50
+1002,Carlos Lima,320
+1003,Beatriz Melo,0
+1004,João Silva,890
+1005,Larissa Costa,230
