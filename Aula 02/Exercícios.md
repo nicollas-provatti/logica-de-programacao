@@ -41,7 +41,7 @@
  
 * Saída:
     ```css
-    O aluno João Silva obteve média final 8.5.
+    O aluno João Silva obteve média final 7.0.
     ```
 
 ---
