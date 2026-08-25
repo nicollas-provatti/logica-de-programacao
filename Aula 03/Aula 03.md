@@ -1,4 +1,4 @@
-# 📘 Aula 10 – Fundamentos
+# 📘 Aula 03 – Fundamentos
 
 ### 🔵 Tipos de Dados Primitivos
 A linguagem C possui **tipos de dados básicos** que determinam o tipo de valor que pode ser armazenado em uma variável.
